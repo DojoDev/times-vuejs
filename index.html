@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>vue-simple02</title>
+  </head>
+  <body>
+   <div id="app" class="container">	
+   <ul>
+    <li v-for="(time, index) in times">
+    {{index+1}} - {{time.name}} <img :src="time.shild"/>
+    </li>
+   
+    </ul> 
+    <ul>  
+    <li v-for="(value, key, index) in alfabeto">
+   {{index}} - {{key}} - {{value}}
+    </li></ul>
+   </div>
+    <script src="/dist/build.js"></script>
+  </body>
+</html>
